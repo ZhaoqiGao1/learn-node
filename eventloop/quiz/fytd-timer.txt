@@ -1,1 +1,5 @@
 - In eventloop/timer.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+
+because of the timer baz will be called first
+then baz again after that becuase we have a timer zero event  move to call back
+they are not waiting because of no i/o thus the next are 2:bar and 1:bar in the executing order.

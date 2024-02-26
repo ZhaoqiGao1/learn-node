@@ -1,3 +1,8 @@
 - Explain the order of execution in terms of the event loop for eventloop/poll_timer.js.
 - Will the order of execution change if the delay in the while loop is changed from 10s to 150s? Why or why not?
 - Will the order of execution change if timeout is changed to 0? Why or why not?
+
+the function get logged then the read file is due but delay but the event is set to the event loop which is at poll stage once the read is done
+
+the loop time change will not affect the order becasue of the wait timer
+the timeout change to 0 will afeect the out come because of the run order and while loop

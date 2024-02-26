@@ -1,1 +1,5 @@
 - In eventloop/poll.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+
+because of the file-read it is asyncOperation even though this function is ran
+ first, but it needs to wait to read this foo and done were printed out first
+then read file is done and find out no file thus read err
